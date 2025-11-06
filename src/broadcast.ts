@@ -1,10 +1,10 @@
-import { PlatformClient } from "./types/broadcast.js";
+import { PlatformClient } from "./types/broadcast";
 import {
     BroadcastResult,
     BroadcastSummary,
     EmbedOptions,
     TestConnectionResult,
-} from "./types/broadcast.js";
+} from "./types/broadcast";
 
 interface ClientEntry {
     client: PlatformClient;

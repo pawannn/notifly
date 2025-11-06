@@ -1,5 +1,5 @@
 {
-  "name": "logifly",
+  "name": "logping",
   "version": "0.1.1",
   "description": "One core. Infinite notification channels.",
   "main": "dist/index.js",
@@ -9,10 +9,11 @@
     "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist"
   },
   "keywords": [
-    "logify",
+    "logping",
     "notifications",
     "discord",
     "webhooks",
+    "logs",
     "alerts",
     "reporting",
     "multi-platform"
@@ -39,6 +40,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pawannn/logifly"
+    "url": "https://github.com/pawannn/logping"
   }
 }

@@ -1,20 +1,20 @@
-export class logifyError extends Error {
+export class logpingError extends Error {
     code: string;
     constructor(message: string, code: string) {
         super(message);
-        this.name = 'logifyError';
+        this.name = 'logpingError';
         this.code = code;
     }
 }
 
-export class ConfigurationError extends logifyError {
+export class ConfigurationError extends logpingError {
     constructor(message: string) {
         super(message, 'CONFIGURATION_ERROR');
         this.name = 'ConfigurationError';
     }
 }
 
-export class MessageSendError extends logifyError {
+export class MessageSendError extends logpingError {
     originalError: any;
     constructor(platform: string, originalError: any) {
         super(

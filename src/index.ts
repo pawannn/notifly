@@ -1,9 +1,9 @@
-import logifly from "./logifly";
+import logping from "./logping";
 import { DiscordClient } from "./clients/Discord";
 import * as errors from "./utils/errors";
 
-const lgfy = new logifly();
+const lgfy = new logping();
 
 export default lgfy;
-export { logifly, DiscordClient, errors as Errors };
+export { logping, DiscordClient, errors as Errors };
 export type { DiscordClientConfig } from "./types/discord";

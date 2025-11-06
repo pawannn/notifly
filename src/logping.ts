@@ -3,7 +3,7 @@ import { DiscordClientConfig } from "./types/discord";
 import { BroadcastGroup } from "./broadcast";
 import { PlatformClient } from "./types/broadcast";
 
-export class logify {
+export class logping {
     private readonly version: string;
     private groups: Map<string, BroadcastGroup>;
 
@@ -65,4 +65,4 @@ export class logify {
     }
 }
 
-export default logify;
+export default logping;

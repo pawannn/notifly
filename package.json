@@ -1,0 +1,44 @@
+{
+  "name": "@zenz-solutions/znotify",
+  "version": "0.1.0",
+  "description": "One core. Infinite notification channels.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist"
+  },
+  "keywords": [
+    "znotify",
+    "notifications",
+    "discord",
+    "webhooks",
+    "alerts",
+    "reporting",
+    "multi-platform"
+  ],
+  "author": "Pawan Kalyan",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "axios": "^1.13.1",
+    "tsup": "^8.5.0"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenz-solutions/znotify.git"
+  }
+}

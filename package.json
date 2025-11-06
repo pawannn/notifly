@@ -1,5 +1,5 @@
 {
-  "name": "notifly",
+  "name": "logifly",
   "version": "0.1.0",
   "description": "One core. Infinite notification channels.",
   "main": "dist/index.js",
@@ -39,6 +39,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pawannn/notifly"
+    "url": "https://github.com/pawannn/logifly"
   }
 }

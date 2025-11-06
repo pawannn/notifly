@@ -1,10 +1,10 @@
-# Notifly
+# logifly
 
 Send notifications to multiple messaging platforms (Discord, Slack, Teams, etc.) with just 2 lines of code.
 
 ## Installation
 
-`npm install Notifly`
+`npm install logifly`
 
 ## Quick Start
 
@@ -18,10 +18,10 @@ Send notifications to multiple messaging platforms (Discord, Slack, Teams, etc.)
 ### 2. Send Your First Message
 
 ```javascript
-const Notifly = require('Notifly');
+const logifly = require('logifly');
 
 // Create a client
-const discord = Notifly.newDiscordClient({
+const discord = logifly.newDiscordClient({
   webhookUrl: 'YOUR_DISCORD_WEBHOOK_URL'
 });
 
@@ -70,18 +70,18 @@ await discord.sendEmbed({
 ### Broadcast to Multiple Channels
 ```javascript
 // Create clients for different channels
-const alerts = Notifly.newDiscordClient({ 
+const alerts = logifly.newDiscordClient({ 
   webhookUrl: 'ALERTS_WEBHOOK' 
 });
-const logs = Notifly.newDiscordClient({ 
+const logs = logifly.newDiscordClient({ 
   webhookUrl: 'LOGS_WEBHOOK' 
 });
-const team = Notifly.newDiscordClient({ 
+const team = logifly.newDiscordClient({ 
   webhookUrl: 'TEAM_WEBHOOK' 
 });
 
 // Group them together
-const group = Notifly.createGroup('critical', [alerts, logs, team]);
+const group = logifly.createGroup('critical', [alerts, logs, team]);
 
 // Send to all channels at once!
 await group.broadcast('🚨 Critical alert: Server down!');

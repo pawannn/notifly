@@ -1,9 +1,15 @@
 {
   "name": "logping",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "One core. Infinite notification channels.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "test": "jest",
     "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist"
@@ -34,8 +40,7 @@
     "tsup": "^8.5.0"
   },
   "files": [
-    "src/",
-    "dist/",
+    "dist",
     "README.md"
   ],
   "repository": {

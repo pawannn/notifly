@@ -1,9 +1,9 @@
-import notifly from "./notifly";
+import logifly from "./logifly";
 import { DiscordClient } from "./clients/Discord";
 import * as errors from "./utils/errors";
 
-const lgfy = new notifly();
+const lgfy = new logifly();
 
 export default lgfy;
-export { notifly, DiscordClient, errors as Errors };
+export { logifly, DiscordClient, errors as Errors };
 export type { DiscordClientConfig } from "./types/discord";

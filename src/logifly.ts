@@ -4,9 +4,9 @@ import { BroadcastGroup } from "./broadcast";
 import { PlatformClient } from "./types/broadcast";
 
 /**
- * Main notifly SDK class.
+ * Main logifly SDK class.
  * 
- * notifly helps you send logs, alerts, or any message to multiple platforms such as
+ * logifly helps you send logs, alerts, or any message to multiple platforms such as
  * **Discord**, **Slack**, **Email**, and others via a unified broadcast interface.
  * 
  * It allows you to:
@@ -16,9 +16,9 @@ import { PlatformClient } from "./types/broadcast";
  * 
  * @example
  * ```ts
- * import notifly from 'notifly';
+ * import logifly from 'logifly';
  * 
- * const log = new notifly();
+ * const log = new logifly();
  * const discord = log.newDiscordClient({
  *   webhookUrl: 'https://discord.com/api/webhooks/XXXX',
  *   username: 'AlertBot'
@@ -28,7 +28,7 @@ import { PlatformClient } from "./types/broadcast";
  * await group.broadcast('Server is down!');
  * ```
  */
-export class notifly {
+export class logifly {
     /** Current SDK version */
     private readonly version: string;
 
@@ -36,7 +36,7 @@ export class notifly {
     private groups: Map<string, BroadcastGroup>;
 
     /**
-     * Initializes a new notifly instance.
+     * Initializes a new logifly instance.
      */
     constructor() {
         this.version = "1.0.0";
@@ -165,4 +165,4 @@ export class notifly {
     }
 }
 
-export default notifly;
+export default logifly;

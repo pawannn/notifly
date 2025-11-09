@@ -22,7 +22,7 @@ export class DiscordClient {
     constructor(config: DiscordClientConfig) {
         this.config = {
             webhookUrl: config.webhookUrl ?? "",
-            username: config.username ?? "notifly Bot",
+            username: config.username ?? "logifly Bot",
             avatarUrl: config.avatarUrl ?? "",
             defaultColor: config.defaultColor ?? 0x3498db,
             timeout: config.timeout ?? 5000,
@@ -177,7 +177,7 @@ export class DiscordClient {
      */
     async testConnection(): Promise<boolean> {
         try {
-            await this.send("notifly connection test successful! 🚀");
+            await this.send("logifly connection test successful! 🚀");
             return true;
         } catch {
             return false;

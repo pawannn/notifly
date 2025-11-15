@@ -2,6 +2,8 @@ import { DiscordClient } from "./clients/Discord";
 import { DiscordClientConfig } from "./types/discord";
 import { BroadcastGroup } from "./broadcast";
 import { PlatformClient } from "./types/broadcast";
+import { SlackClientConfig } from "./types/slack";
+import { SlackClient } from "./clients/Slack";
 
 /**
  * Main logifly SDK class.
@@ -59,6 +61,24 @@ export class logifly {
      */
     newDiscordClient(config: DiscordClientConfig): DiscordClient {
         return new DiscordClient(config);
+    }
+
+    /**
+     * Creates a new Slack client instance.
+     *
+     * @param {SlackClientConfig} config - Configuration options for the Slack client.
+     * @returns {SlackClient} A configured Slack client ready to send messages.
+     *
+     * @example
+     * ```ts
+     * const slack = log.newSlackClient({
+     *   webhookUrl: 'https://hooks.slack.com/services/XXXX',
+     *   username: 'LogBot'
+     * });
+     * ```
+     */
+    newSlackClient(config: SlackClientConfig): SlackClient {
+        return new SlackClient(config);
     }
 
     /**

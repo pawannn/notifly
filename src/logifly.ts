@@ -41,7 +41,7 @@ export class logifly {
      * Initializes a new logifly instance.
      */
     constructor() {
-        this.version = "1.0.0";
+        this.version = "0.1.2";
         this.groups = new Map();
     }
 
